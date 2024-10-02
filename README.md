@@ -1,4 +1,52 @@
 # learning_pexeso
+English version of readme:
+Learning Pexeso
+Pexeso Game - Memory Matching Game (Against AI)
+This project is a web implementation of the Pexeso game (also known as a memory matching game), where the player tries to find pairs of cards. The game allows playing against the computer, which "remembers" the cards during the game and strategically makes decisions.
+Features
+•	Play against the computer (AI): The game allows playing against the computer, which has its own strategy and memory.
+•	Artificial Intelligence: The computer remembers the cards it has already flipped and tries to improve its strategy based on this information.
+•	Card flip animation: Each card animates as it flips, providing a smooth visual experience.
+•	Score tracking: The score of both the player and the computer is continuously displayed.
+•	Simple and responsive design: The game is accessible on various devices thanks to the optimized design.
+•	Game saving: The ability to save the current game and continue later.
+How the AI Works
+The computer in this version of Pexeso is not just a random player but tries to simulate human behavior when matching cards.
+•	AI Memory: When the computer flips a card, it stores the information about the card in its memory. Later, if it flips another card, it compares it with the cards in its memory and tries to form a pair if it finds a match.
+•	AI Strategy:
+o	The computer starts by randomly selecting cards. As it remembers what’s on the cards, it gradually stops selecting randomly and starts targeting specific pairs.
+o	If the computer flips a card it remembers, it will try to flip its matching pair as soon as possible if it already knows where it is.
+•	Improved Decision-Making: After each turn, the computer compares the flipped cards with its memory and learns how to make more efficient decisions in selecting pairs.
+How to Run the Project
+1. Running in a Browser Only (Without PHP)
+You can run the game simply by opening the index.php or pexeso.php file directly in your browser. All game logic (card flipping, AI opponent) is written in JavaScript, so the game will work without a server environment.
+2. Running with PHP for Educational Purposes
+For full functionality, including user registration, game saving, and the leaderboard, PHP and MySQL need to be set up.
+Requirements:
+•	A web server with PHP support.
+•	MySQL database for storing user accounts, scores, and saved games.
+Installation:
+1.	Clone the repository from GitHub:
+git clone https://github.com/your-repo-url/pexeso-game.git
+2.	Set up the database:
+o	Create a MySQL database.
+o	Import the SQL file (e.g., db.sql), which will create the necessary tables for users and scores.
+3.	Configure the config.php file:
+o	Open the config.php file and fill in your database connection details:
+$servername = "your-server";
+$username = "your-database-username";
+$password = "your-password";
+$dbname = "your-database-name";
+4.	Upload to the server:
+o	Upload all the files to your web server with PHP support.
+5.	Access the game with PHP:
+o	Open the following URL in your browser:
+http://your-server/index.php
+How to Play
+1.	If you are running the game without PHP, simply open index.php in your browser and start playing.
+2.	If using the PHP version, you can register, log in, and your score will be saved in the database.
+
+Czech version of readme:
 Pexeso Game - Memory Matching Game (Against AI)
 Tento projekt je webová implementace hry Pexeso (známé také jako hra na párování), kde se hráč snaží najít dvojice kartiček. Hra umožňuje hraní proti počítači, který si během hry „pamatuje“ kartičky a snaží se strategicky rozhodovat.
 
@@ -49,54 +97,6 @@ http://váš-server/index.php
 Jak hrát
 1.	Pokud hru spouštíte bez PHP, stačí otevřít index.php v prohlížeči a začít hrát.
 2.	Pokud používáte PHP verzi, můžete se zaregistrovat, přihlásit a vaše skóre bude uloženo v databázi.
-
-english version of readme:
-Learning Pexeso
-Pexeso Game - Memory Matching Game (Against AI)
-This project is a web implementation of the Pexeso game (also known as a memory matching game), where the player tries to find pairs of cards. The game allows playing against the computer, which "remembers" the cards during the game and strategically makes decisions.
-Features
-•	Play against the computer (AI): The game allows playing against the computer, which has its own strategy and memory.
-•	Artificial Intelligence: The computer remembers the cards it has already flipped and tries to improve its strategy based on this information.
-•	Card flip animation: Each card animates as it flips, providing a smooth visual experience.
-•	Score tracking: The score of both the player and the computer is continuously displayed.
-•	Simple and responsive design: The game is accessible on various devices thanks to the optimized design.
-•	Game saving: The ability to save the current game and continue later.
-How the AI Works
-The computer in this version of Pexeso is not just a random player but tries to simulate human behavior when matching cards.
-•	AI Memory: When the computer flips a card, it stores the information about the card in its memory. Later, if it flips another card, it compares it with the cards in its memory and tries to form a pair if it finds a match.
-•	AI Strategy:
-o	The computer starts by randomly selecting cards. As it remembers what’s on the cards, it gradually stops selecting randomly and starts targeting specific pairs.
-o	If the computer flips a card it remembers, it will try to flip its matching pair as soon as possible if it already knows where it is.
-•	Improved Decision-Making: After each turn, the computer compares the flipped cards with its memory and learns how to make more efficient decisions in selecting pairs.
-How to Run the Project
-1. Running in a Browser Only (Without PHP)
-You can run the game simply by opening the index.php or pexeso.php file directly in your browser. All game logic (card flipping, AI opponent) is written in JavaScript, so the game will work without a server environment.
-2. Running with PHP for Educational Purposes
-For full functionality, including user registration, game saving, and the leaderboard, PHP and MySQL need to be set up.
-Requirements:
-•	A web server with PHP support.
-•	MySQL database for storing user accounts, scores, and saved games.
-Installation:
-1.	Clone the repository from GitHub:
-git clone https://github.com/your-repo-url/pexeso-game.git
-2.	Set up the database:
-o	Create a MySQL database.
-o	Import the SQL file (e.g., db.sql), which will create the necessary tables for users and scores.
-3.	Configure the config.php file:
-o	Open the config.php file and fill in your database connection details:
-$servername = "your-server";
-$username = "your-database-username";
-$password = "your-password";
-$dbname = "your-database-name";
-4.	Upload to the server:
-o	Upload all the files to your web server with PHP support.
-5.	Access the game with PHP:
-o	Open the following URL in your browser:
-http://your-server/index.php
-How to Play
-1.	If you are running the game without PHP, simply open index.php in your browser and start playing.
-2.	If using the PHP version, you can register, log in, and your score will be saved in the database.
-
 
 
 
